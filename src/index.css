@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@ body {
   border-radius: 5px;
 }
 
-.card button {
+.notinterested {
   width: 250px;
   height: 35px;
   margin-top: 15px;
@@ -98,11 +98,13 @@ body {
   border-radius: 10px;
 }
 
-.details a {
+.readmore {
   color: #2d87c8;
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 18px;
+  border: none;
+  background-color: transparent;
 }
 
 .details p {

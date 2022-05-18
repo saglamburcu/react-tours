@@ -16,14 +16,14 @@ function Tour({ id, name, image, price, info, onChangeTourList }) {
 
           {
             <p>{isShowLetter ? info : `${info.substring(0, 200)}...`}
-              <a href="#" onClick={() => setIsShowLetter(!isShowLetter)}>
+              <button className="readmore" type="button" onClick={() => setIsShowLetter(!isShowLetter)}>
                 {isShowLetter ? " Show Less" : " Read More"}
-              </a>
+              </button>
             </p>
           }
 
           <span className="button-container">
-            <button type="button" onClick={() => onChangeTourList(id)}>Not Interested</button>
+            <button className="notinterested" type="button" onClick={() => onChangeTourList(id)}>Not Interested</button>
           </span>
         </div>
       </div>
